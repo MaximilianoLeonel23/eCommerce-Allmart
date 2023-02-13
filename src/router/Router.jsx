@@ -4,6 +4,8 @@ import Error404 from "../components/pages/Error404";
 import Home from "../components/pages/Home";
 import Products from "../components/pages/Products";
 import App from "./../components/templatess/App";
+import Login from "../components/pages/Login";
+
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,10 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/login", 
+    element: <Login />
+  }
 ]);
 
 export default router;
